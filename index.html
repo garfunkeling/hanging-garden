@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Hanging Gardens of Tonestan</title>
+    <meta name="description" content="Imperial Tonestan">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://rawgit.com/takahirox/aframe-outline/master/build/aframe-outline.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="markings" 
+             src="https://cdn.glitch.com/639d25d9-3821-4d8d-a758-4cbf780290d0%2Fsquare3.png?1497884395870">
+      </a-assets>
+      
+      
+      <!-- <a-entity particle-system= "preset: snow;
+                                  color: #FF5600, #00FFFF, #FF0046; 
+                                  particleCount: 200000">
+      </a-entity>
+      
+      <a-entity particle-system= "preset: color; 
+                                  color: #FF5600, #00FFFF, #FF0046; 
+                                  particleCount: 10000; 
+                                  type: 1 
+                                  maxAge: 30" 
+                position= "0 300 0">
+      </a-entity> -->
+      
+      
+      
+      <!-- Yellow Asterisk Lights -->
+      <!-- Yellow Light 1 -->
+      <!-- <a-entity animation= "property: position; 
+                            to: 40 2 40; 
+                            loop: true; 
+                            dur: 10000; 
+                            dir: alternate">
+      
+      <a-entity geometry= "primitive: box; 
+                           height: 0.25; 
+                           width: 0.25; depth: 
+                           2.25" 
+                
+                position= "-40 2 -40" 
+                
+                material= "shader: flat; 
+                           color: #FFFB4A"
+                
+                light= "type: point; 
+                        intensity: 0.1; 
+                        color: #FFFB4A" 
+                
+                animation= "property: rotation; 
+                            to: 360 360 360; 
+                            easing: easeInOutBack; 
+                            loop: true
+                            dir: alternate; dur: 1000">
+        </a-entity>
+        
+      <a-entity geometry= "primitive: box; 
+                           height: 0.25; 
+                           width: 2.25; 
+                           depth: 0.25" 
+                
+                position= "-40 2 -40" 
+                
+                material= "shader: flat; 
+                           color: #FFFB4A"
+                
+                light= "type: point; intensity: 0.1; 
+                        color: #FFFB4A" 
+                
+                animation= "property: rotation; 
+                            to: 360 360 360; 
+                            easing: easeInOutBack; 
+                            loop: true; 
+                            dir: alternate; dur: 1000">
+        </a-entity>
+        
+      <a-entity geometry= "primitive: box; height: 2.25; 
+                           width: 0.25; 
+                           depth: 0.25" 
+                
+                position= "-40 2 -40"
+                
+                material= "shader: flat; 
+                           color: #FFFB4A"
+                
+                light= "type: point; 
+                        intensity: 0.1; 
+                        color: #FFFB4A" 
+                
+                animation= "property: rotation; 
+                            to: 360 360 360; 
+                            easing: easeInOutBack; 
+                            loop: true
+                            dir: alternate; dur: 1000">
+        </a-entity>
+      </a-entity> -->
+      
+      <!-- Yellow Light 2 -->
+      <!-- <a-entity animation= "property: position; 
+                            to: -40 2 -40; loop: 
+                            true; dur: 10000; 
+                            dir: alternate">
+      
+      <a-entity geometry= "primitive: box; 
+                           height: 0.25; 
+                           width: 0.25; 
+                           depth: 2.25" 
+                
+                position= "40 2 40" 
+                
+                material= "shader: flat; 
+                           color: #FFFB4A"
+                
+                light= "type: point; 
+                        intensity: 0.1; 
+                        color: #FFFB4A" 
+                
+                animation= "property: rotation; 
+                            to: 360 360 360; 
+                            easing: easeInOutBack; 
+                            loop: true
+                            dir: alternate; dur: 1000">
+        </a-entity>
+      
+        <a-entity geometry= "primitive: box; 
+                           height: 0.25; 
+                           width: 2.25; 
+                           depth: 0.25"
+               
+                  position= "40 2 40" 
+                
+                  material= "shader: flat; 
+                             color: #FFFB4A"
+                
+                  light= "type: point; 
+                          intensity: 0.1; 
+                          color: #FFFB4A" 
+                  
+                  animation= "property: rotation; 
+                              to: 360 360 360; 
+                              easing: easeInOutBack; 
+                              loop: true
+                              dir: alternate; dur: 1000">
+        </a-entity>
+        
+      <a-entity geometry= "primitive: box; 
+                           height: 2.25; 
+                           width: 0.25; 
+                           depth: 0.25" 
+                
+                position= "40 2 40" 
+               
+                material= "shader: flat; 
+                           color: #FFFB4A"
+                
+                light= "type: point; 
+                        intensity: 0.1; 
+                        color: #FFFB4A" 
+                
+                animation= "property: rotation; 
+                            to: 360 360 360; 
+                            easing: easeInOutBack; 
+                            loop: true
+                            dir: alternate; dur: 1000">
+        </a-entity>
+      </a-entity> -->
+      
+      <!-- Yellow Light 3 -->
+      <!-- <a-entity animation= "property: position; 
+                            to: -40 2 40; 
+                            loop: true;
+                            dur: 10000; 
+                            dir: alternate">
+      
+      <a-entity geometry= "primitive: box; 
+                           height: 0.25; 
+                           width: 0.25; 
+                           depth: 2.25" 
+                
+                position= "40 2 -40" 
+                
+                material= "shader: flat; 
+                           color: #FFFB4A"
+                
+                light= "type: point; 
+                        intensity: 0.1; 
+                        color: #FFFB4A" 
+                
+                animation= "property: rotation; 
+                            to: 360 360 360; 
+                            easing: easeInOutBack; 
+                            loop: true
+                            dir: alternate; dur: 1000">
+        </a-entity>
+        
+      <a-entity geometry= "primitive: box;
+                           height: 0.25; 
+                           width: 2.25; depth:
+                           0.25" 
+                
+                position= "40 2 -40" 
+                
+                material= "shader: flat; 
+                           color: #FFFB4A"
+                
+                light= "type: point; 
+                        intensity: 0.1; 
+                        color: #FFFB4A" 
+                
+                animation= "property: rotation;
+                            to: 360 360 360; 
+                            easing: easeInOutBack; 
+                            loop: true
+                            dir: alternate; dur: 1000">
+        </a-entity>
+        
+      <a-entity geometry= "primitive: box; 
+                           height: 2.25; 
+                           width: 0.25; 
+                           depth: 0.25" 
+                
+                position= "40 2 -40"
+                
+                material= "shader: flat; 
+                           color: #FFFB4A"
+                
+                light= "type: point; 
+                        intensity: 0.1; 
+                        color: #FFFB4A" 
+                
+                animation= "property: rotation; 
+                            to: 360 360 360; 
+                            easing: easeInOutBack; 
+                            loop: true
+                            dir: alternate; 
+                            dur: 1000">
+        </a-entity>
+      </a-entity> -->
+      
+      <!-- Yellow Light 4 -->
+      <!-- <a-entity animation= "property: position; 
+                            to: 40 2 -40; 
+                            loop: true; 
+                            dur: 10000; 
+                            dir: alternate">
+      
+      <a-entity geometry= "primitive: box; 
+                           height: 0.25;
+                           width: 0.25; 
+                           depth: 2.25" 
+                
+                position= "-40 2 40" 
+                
+                material= "shader: flat; 
+                           color: #FFFB4A"
+                
+                light= "type: point; 
+                        intensity: 0.1; 
+                        color: #FFFB4A" 
+                
+                animation= "property: rotation; 
+                            to: 360 360 360; 
+                            easing: easeInOutBack; 
+                            loop: true
+                            dir: alternate; dur: 1000">
+        </a-entity>
+      
+      <a-entity geometry= "primitive: box; 
+                           height: 0.25; 
+                           width: 2.25; 
+                           depth: 0.25" 
+                
+                position= "-40 2 40" 
+                
+                material= "shader: flat; 
+                           color: #FFFB4A"
+                
+                light= "type: point; 
+                        intensity: 0.1; 
+                        color: #FFFB4A" 
+                
+                animation= "property: rotation; 
+                            to: 360 360 360;
+                            easing: 
+                            easeInOutBack; 
+                            loop: true
+                            dir: alternate; 
+                            dur: 1000">
+        </a-entity>
+        
+      <a-entity geometry= "primitive: box; 
+                           height: 2.25; 
+                           width: 0.25; 
+                           depth: 0.25" 
+                
+                position= "-40 2 40" 
+                
+                material= "shader: flat; 
+                           color: #FFFB4A"
+                
+                light= "type: point;
+                        intensity: 0.1; 
+                        color: #FFFB4A" 
+                
+                animation= "property: rotation; 
+                            to: 360 360 360; 
+                            easing: easeInOutBack; 
+                            loop: true
+                            dir: alternate;
+                            dur: 1000">
+        </a-entity>
+      </a-entity> -->
+      
+      
+  
+   <!-- LANDSCAPE -->
+   <!-- Blue Structures -->
+   
+     <a-entity id="centralcylinder1" 
+               
+                geometry= "primitive: cylinder; 
+                           radius: 10; 
+                           height: 300; 
+                           openEnded: false;
+                           segmentsHeight: 1;
+                           segmentsRadial: 5" 
+                
+                material= "color: #3DA8FF" 
+               
+                position= "0 150 -150">
+     </a-entity>
+      <a-entity geometry= "primitive: cylinder;
+                            radius: 15;
+                            height: 150;
+                            openEnded: false;
+                            segmentsHeight: 2;
+                            segmentsRadial: 7"
+                 
+                 material= "color: #006CFF"
+                 
+                 position= "8 75 -145">
+       </a-entity>
+      
+       <a-entity geometry= "primitive: cylinder;
+                            radius: 18;
+                            height: 20;
+                            openEnded: false;
+                            segmentsHeight: 1;
+                            segmentsWidth: 5"
+                 
+                 material= "color: #006CFF"
+                 
+                 position= "-10 10 -135">
+      
+       </a-entity>
+      
+      <a-entity id="centralcylinder2" 
+                
+                geometry="primitive: cylinder; 
+                          radius: 10; 
+                          height: 300; 
+                          openEnded: false;
+                          segmentsHeight: 1;
+                          segmentsRadial: 5" 
+                
+                material="color: #3DA8FF" 
+                
+                position="0 150 150">
+     </a-entity>
+      
+      <a-entity id="centralcylinder3" 
+                
+                geometry="primitive: cylinder; 
+                          radius: 10; 
+                          height: 300; 
+                          openEnded: false;
+                          segmentsHeight: 1;
+                          segmentsRadial: 5" 
+                
+                material="color: #3DA8FF" 
+                
+                position="-150 150 0">
+     </a-entity>
+      
+      <a-entity id="centralcylinder4" 
+                
+                geometry="primitive: cylinder; 
+                          radius: 10;
+                          height: 300; 
+                          openEnded: false;
+                          segmentsHeight: 1;
+                          segmentsRadial: 5" 
+                
+                material="color: #3DA8FF" 
+                
+                position="150 150 0">
+     </a-entity>
+      
+      
+      <!-- SKYSCAPE -->
+      <!-- Hanging Structures -->
+      <a-entity geometry= "primitive: box; 
+                           width: 300;
+                           height: 9000; 
+                           depth: 300" 
+                
+                position="2000 4800 2000" 
+                
+                material= "color: #FF5600">
+      </a-entity>
+      
+
+      <!-- Land & Sky -->
+      <a-entity id="plane" 
+                geometry="primitive: plane; 
+                          width: 10000; 
+                          height: 10000" 
+                
+                material="color: #FFFCA6; 
+                          src: #markings; 
+                          repeat: 10000 10000; 
+                          transparent: true; 
+                          metalness: 0.6; 
+                          roughness: 0.4" 
+                
+                rotation="-90 0 0">
+      </a-entity>
+      
+      <a-entity id="sky" 
+                geometry="primitive: sphere;
+                          radius: 10000" 
+                
+                material="color: #FF5600;
+                          shader: flat;
+                          side: double">
+      </a-entity>
+      
+      <!-- Fixed Lighting -->
+      <a-entity light="type: hemisphere;
+                       color: #FF5600;
+                       groundColor: #99FFF3;
+                       intensity: 1">
+      </a-entity>
+      
+      <a-entity light="type: directional;
+                       color: #99FFF3;
+                       intensity: 1" 
+                
+                position="-1 2 0">
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
